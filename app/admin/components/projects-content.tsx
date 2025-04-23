@@ -30,20 +30,20 @@ export default function ProjectsContent() {
   return (
     <div className="space-y-6">
       <div className="flex justify-between items-center">
-        <h2 className="text-2xl font-bold text-white">Projects</h2>
-        <Button className="flex items-center gap-2">
-          <PlusCircle className="h-4 w-4" />
-          Add Project
-        </Button>
+        <h2 className="text-2xl font-bold text-black">Projects</h2>
       </div>
+      <Button className="flex items-center gap-2">
+        <PlusCircle className="h-4 w-4" />
+        Add Project
+      </Button>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {projects.map((project) => (
-          <Card key={project.ID} className="bg-gray-100 text-black border-gray-600">
+          <Card key={project.id} className="bg-gray-100 text-black border-gray-600">
             <CardHeader>
-              <CardTitle>{project.Title}</CardTitle>
+              <CardTitle>{project.title}</CardTitle>
               <CardDescription className="text-gray-300">
-              {project.Stack.map((item: string) => (
+              {project.stack.map((item: string) => (
               <Badge 
                 key={item}
                 variant={"outline"}
@@ -54,7 +54,7 @@ export default function ProjectsContent() {
               </CardDescription>
             </CardHeader>
             <CardContent>
-              <p className="text-sm text-gray-500">{project.Description}</p>
+              <p className="text-sm text-gray-500">{project.escription}</p>
             </CardContent>
             <CardFooter className="flex justify-between">
               <Button variant="outline" size="sm" onClick={handleEdit}>
