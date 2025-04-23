@@ -60,7 +60,7 @@ export default function ProjectsContent() {
               <Button variant="outline" size="sm" onClick={handleEdit}>
                 Edit
               </Button>
-              <Button variant="outline" size="sm" >
+              <Button variant="destructive" size="sm" className="bg-red-400 text-white">
                 Delete
               </Button>
             </CardFooter>
