@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react"
 import { useRouter, usePathname } from "next/navigation"
 import { SidebarProvider } from "@/components/ui/sidebar"
-import AdminSidebar from "./components/admin-sidebar"
+import AdminSideBar from "@/app/admin/components/Sidebar"
 import { validateToken } from "../lib/api"
 
 export default function AdminLayout({
@@ -65,7 +65,7 @@ export default function AdminLayout({
     <div className="bg-white min-h-screen">
       <SidebarProvider>
         <div className="flex">
-          <AdminSidebar />
+          <AdminSideBar /> 
           <main className="flex-1 p-6">{children}</main>
         </div>
       </SidebarProvider>

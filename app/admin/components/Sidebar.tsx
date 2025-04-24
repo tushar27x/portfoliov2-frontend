@@ -14,7 +14,7 @@ import {
   SidebarMenuButton,
 } from "@/components/ui/sidebar"
 
-export default function AdminSidebar() {
+export default function AdminSideBar() {
   const pathname = usePathname()
 
   const navItems = [

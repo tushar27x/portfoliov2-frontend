@@ -1,4 +1,4 @@
-import ProjectsContent from "../components/projects-content"
+import ProjectsContent from "../components/ProjectsContent"
 
 export default function ProjectsPage() {
   return <ProjectsContent />
